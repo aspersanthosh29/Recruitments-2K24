@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.section-title-area {
+    margin-bottom: 40px;
+}
+
+.product-card {
+    margin-bottom: 30px;
+}
+
+.product-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.animated-logo-left {
+    animation: slideInLeft 1s ease;
+}
+
+.animated-logo-right {
+    animation: slideInRight 1s ease;
+}
+
+.animated-title {
+    animation: slideInDown 1s ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

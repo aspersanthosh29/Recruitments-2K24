@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+.symposiumHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #007bff;
+  color: white;
+}
+
+.sypoHeadimg img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.sypoContent {
+  text-align: center;
+}
+
+.banner-info {
+  background-color: #000;
+  color: white;
+  padding: 50px 20px;
+}
+
+.banner-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.banner-info p {
+  font-size: 18px;
+}
+
+.about-counter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ts-single-funfact {
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.ts-single-funfact h3,
+.ts-single-funfact h4 {
+  margin: 0;
+}
+
+.ts-single-funfact h3 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.ts-single-funfact h4 {
+  font-size: 18px;
+}
+
+.custom-column {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.ts-blog {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.section-title-area {
+  margin-bottom: 40px;
+}
+
+.section-title-area span {
+  display: block;
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-title-area h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-title-area p {
+  font-size: 16px;
+}
+
+.footer-area {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-nav h4,
+.footer-contact h4 {
+  margin-bottom: 20px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-contact ul li a {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  background-color: #23272b;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.animated-logo-left {
+  animation: fadeInLeft 2s;
+}
+
+.animated-logo-right {
+  animation: fadeInRight 2s;
+}
+
+.animated-title {
+  animation: fadeInUp 2s;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-logo,
+  .footer-nav,
+  .footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-area .row p{
+    text-align: center;
+  }
+
+  .footer-nav ul,
+  .footer-contact ul {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-nav ul li,
+  .footer-contact ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .footer-nav ul li:last-child,
+  .footer-contact ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-contact ul {
+    justify-content: center;
+  }
+  
+  .footer-contact ul li {
+    margin-right: 10px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
